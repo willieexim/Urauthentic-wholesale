@@ -87,4 +87,3 @@ app.get('/api/products', (req, res) => {
   res.json([{ id: 1, name: 'Sample Product' }]);
 });
 app.listen(PORT, () => console.log("Server running on port " + PORT));
-});
