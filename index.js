@@ -5,6 +5,7 @@ import jwt from 'jsonwebtoken';
 import sqlite3 from 'sqlite3';
 
 const app = express();
+app.get('/', (req, res) => res.send('API is live!'));
 app.use(cors());
 app.use(express.json());
 
