@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 
+app.get('/', (req, res) => res.send('Hello!'));
 app.get('/api/products', (req, res) => {
   res.json([{ id: 1, name: 'Sample Product' }]);
 });
